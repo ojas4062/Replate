@@ -22,6 +22,8 @@ export interface SurplusListing {
   accessible: boolean;
   postedAt: string;
   status: 'available' | 'claimed' | 'completed';
+  lat?: number;
+  lng?: number;
 }
 
 export type VerificationStatus = 'pending' | 'verified' | 'unverified';

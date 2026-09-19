@@ -12,7 +12,9 @@ export const INITIAL_LISTINGS: SurplusListing[] = [
     distanceKm: 1.2,
     accessible: true,
     postedAt: '2026-09-19T13:45:00Z',
-    status: 'available'
+    status: 'available',
+    lat: 18.5204,
+    lng: 73.8567,
   },
   {
     id: 'list-2',
@@ -25,7 +27,9 @@ export const INITIAL_LISTINGS: SurplusListing[] = [
     distanceKm: 2.8,
     accessible: true,
     postedAt: '2026-09-19T14:10:00Z',
-    status: 'available'
+    status: 'available',
+    lat: 18.5380,
+    lng: 73.8474,
   },
   {
     id: 'list-3',
@@ -38,7 +42,9 @@ export const INITIAL_LISTINGS: SurplusListing[] = [
     distanceKm: 0.8,
     accessible: true,
     postedAt: '2026-09-19T15:00:00Z',
-    status: 'available'
+    status: 'available',
+    lat: 18.5150,
+    lng: 73.8500,
   },
   {
     id: 'list-4',
@@ -51,7 +57,9 @@ export const INITIAL_LISTINGS: SurplusListing[] = [
     distanceKm: 14.5,
     accessible: false,
     postedAt: '2026-09-19T15:20:00Z',
-    status: 'available'
+    status: 'available',
+    lat: 18.6298,
+    lng: 73.7997,
   }
 ];
 

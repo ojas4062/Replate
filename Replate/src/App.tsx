@@ -39,6 +39,23 @@ export function App() {
     setListings(prev => prev.map(l => l.id === newClaim.listingId ? { ...l, status: 'claimed' } : l));
   };
 
+  const handleMarkPickedUp = (claimId: string) => {
+    const claim = claims.find(c => c.id === claimId);
+    if (!claim) return;
+    setClaims(prev => prev.map(c => c.id === claimId
+      ? { ...c, verificationStatus: 'verified' as const, proofOfPickupUploaded: true, pickupWindow: 'Completed ✓' }
+      : c
+    ));
+    setListings(prev => prev.map(l => l.id === claim.listingId ? { ...l, status: 'completed' } : l));
+  };
+
+  const handleApproveVerification = (claimId: string) => {
+    setClaims(prev => prev.map(c => c.id === claimId
+      ? { ...c, verificationStatus: 'verified' as const }
+      : c
+    ));
+  };
+
   if (!user) {
     return <AuthModal onLogin={handleLogin} />;
   }
@@ -58,6 +75,8 @@ export function App() {
             listings={listings}
             claims={claims}
             onAddListing={handleAddListing}
+            onMarkPickedUp={handleMarkPickedUp}
+            onApproveVerification={handleApproveVerification}
           />
         );
       case 'ngo':

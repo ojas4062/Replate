@@ -10,6 +10,8 @@ interface HotelPanelProps {
   listings: SurplusListing[];
   claims: Claim[];
   onAddListing: (listing: Omit<SurplusListing, 'id' | 'providerId' | 'postedAt' | 'status'>) => void;
+  onMarkPickedUp: (claimId: string) => void;
+  onApproveVerification: (claimId: string) => void;
 }
 
 export const HotelPanel: React.FC<HotelPanelProps> = ({
@@ -18,7 +20,9 @@ export const HotelPanel: React.FC<HotelPanelProps> = ({
   setActiveTab,
   listings,
   claims,
-  onAddListing
+  onAddListing,
+  onMarkPickedUp,
+  onApproveVerification
 }) => {
   const [dayOfWeek, setDayOfWeek] = useState('Friday');
   const [expectedBookings, setExpectedBookings] = useState<number>(350);
@@ -28,22 +32,45 @@ export const HotelPanel: React.FC<HotelPanelProps> = ({
 
   const [predictedDiners, setPredictedDiners] = useState<number | null>(null);
   const [prepBuffer, setPrepBuffer] = useState<number>(0);
+  const [recommendedPortions, setRecommendedPortions] = useState<number>(0);
+  const [wasteKg, setWasteKg] = useState<number>(0);
+  const [predicting, setPredicting] = useState(false);
+  const [predError, setPredError] = useState<string | null>(null);
 
   const [menuItem, setMenuItem] = useState('');
   const [quantity, setQuantity] = useState<number>(15);
   const [readyByTime, setReadyByTime] = useState('15:30');
   const [pickupWindow, setPickupWindow] = useState('15:30 - 17:30');
 
-  const handlePredict = (e: React.FormEvent) => {
+  const handlePredict = async (e: React.FormEvent) => {
     e.preventDefault();
-    let base = expectedBookings * 0.82;
-    if (weatherCondition === 'Rain') base *= 0.88;
-    if (isHoliday) base *= 1.12;
-    if (specialEvent) base *= 1.15;
-    
-    const finalPredicted = Math.round(base);
-    setPredictedDiners(finalPredicted);
-    setPrepBuffer(Math.round(finalPredicted * 0.05));
+    setPredicting(true);
+    setPredError(null);
+    try {
+      const res = await fetch('/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          dayOfWeek:        dayOfWeek,
+          mealType:         'Dinner',
+          menuCategory:     'Standard',
+          expectedBookings: expectedBookings,
+          isHoliday:        isHoliday,
+          isExam:           false,
+          bufferRate:       0.05,
+        }),
+      });
+      if (!res.ok) throw new Error('API error');
+      const data = await res.json();
+      setPredictedDiners(data.predictedDiners);
+      setPrepBuffer(data.bufferPortions);
+      setRecommendedPortions(data.recommendedPortions);
+      setWasteKg(data.estimatedWasteSavedKg);
+    } catch {
+      setPredError('Could not reach prediction server. Is api.py running?');
+    } finally {
+      setPredicting(false);
+    }
   };
 
   const handlePostSurplus = (e: React.FormEvent) => {
@@ -202,12 +229,17 @@ export const HotelPanel: React.FC<HotelPanelProps> = ({
               </label>
             </div>
 
-            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-              <Sparkles size={16} /> Run Prediction Model
+            <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={predicting}>
+              <Sparkles size={16} /> {predicting ? 'Running Model…' : 'Run Prediction Model'}
             </button>
           </form>
 
           <div>
+            {predError && (
+              <div className="status-banner warning" style={{ marginBottom: '1rem' }}>
+                <span>{predError}</span>
+              </div>
+            )}
             {predictedDiners !== null ? (
               <div className="glass-card" style={{ padding: '1.75rem', border: '1px solid var(--primary-glow)', background: 'radial-gradient(circle at top right, rgba(16,185,129,0.1) 0%, var(--bg-card) 100%)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
@@ -223,7 +255,7 @@ export const HotelPanel: React.FC<HotelPanelProps> = ({
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
                     <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Recommended Prep Meals:</span>
-                    <strong style={{ color: 'white' }}>{predictedDiners + prepBuffer} portions</strong>
+                    <strong style={{ color: 'white' }}>{recommendedPortions} portions</strong>
                   </div>
 
                   <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
@@ -233,7 +265,7 @@ export const HotelPanel: React.FC<HotelPanelProps> = ({
 
                   <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
                     <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Est. Food Waste Prevented:</span>
-                    <strong style={{ color: '#34D399' }}>~{Math.round((expectedBookings - predictedDiners) * 0.45)} kg</strong>
+                    <strong style={{ color: '#34D399' }}>~{wasteKg} kg</strong>
                   </div>
                 </div>
 
@@ -351,9 +383,19 @@ export const HotelPanel: React.FC<HotelPanelProps> = ({
                   </div>
                 </div>
 
-                <button className="btn btn-primary btn-sm" disabled={claim.verificationStatus !== 'verified'} style={{ opacity: claim.verificationStatus === 'verified' ? 1 : 0.6 }}>
-                  {claim.verificationStatus === 'verified' ? 'Mark Picked Up' : 'Awaiting Review'}
-                </button>
+                {claim.pickupWindow === 'Completed ✓' ? (
+                  <span style={{ fontSize: '0.82rem', color: '#34D399', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                    <CheckCircle2 size={16} /> Picked Up ✓
+                  </span>
+                ) : claim.verificationStatus === 'verified' ? (
+                  <button className="btn btn-primary btn-sm" onClick={() => onMarkPickedUp(claim.id)}>
+                    Mark Picked Up
+                  </button>
+                ) : (
+                  <button className="btn btn-secondary btn-sm" onClick={() => onApproveVerification(claim.id)}>
+                    Approve &amp; Verify
+                  </button>
+                )}
               </div>
             ))}
           </div>
