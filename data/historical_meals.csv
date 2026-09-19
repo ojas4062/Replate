@@ -1,0 +1,501 @@
+date,day_of_week,meal_type,menu_category,expected_students,holiday,exam_day,actual_diners,prepared_portions,leftover_portions
+2026-03-01,Sunday,Breakfast,Standard,506,False,False,258,506,248
+2026-03-01,Sunday,Lunch,Standard,506,False,False,324,506,182
+2026-03-01,Sunday,Dinner,Standard,506,False,False,284,506,222
+2026-03-02,Monday,Breakfast,Standard,494,False,False,336,494,158
+2026-03-02,Monday,Lunch,Standard,494,False,False,398,494,96
+2026-03-02,Monday,Dinner,Standard,494,False,False,422,494,72
+2026-03-03,Tuesday,Breakfast,Biryani / Special,490,False,False,359,490,131
+2026-03-03,Tuesday,Lunch,Continental,490,False,False,425,490,65
+2026-03-03,Tuesday,Dinner,Biryani / Special,490,False,False,424,490,66
+2026-03-04,Wednesday,Breakfast,Standard,488,True,False,212,488,276
+2026-03-04,Wednesday,Lunch,Comfort Food,488,True,False,237,488,251
+2026-03-04,Wednesday,Dinner,South Indian,488,True,False,244,488,244
+2026-03-05,Thursday,Breakfast,Comfort Food,494,False,False,325,494,169
+2026-03-05,Thursday,Lunch,Standard,494,False,False,422,494,72
+2026-03-05,Thursday,Dinner,Biryani / Special,494,False,False,473,494,21
+2026-03-06,Friday,Breakfast,Standard,507,False,False,358,507,149
+2026-03-06,Friday,Lunch,Standard,507,False,False,454,507,53
+2026-03-06,Friday,Dinner,Standard,507,False,False,410,507,97
+2026-03-07,Saturday,Breakfast,Biryani / Special,486,False,False,281,486,205
+2026-03-07,Saturday,Lunch,Standard,486,False,False,352,486,134
+2026-03-07,Saturday,Dinner,South Indian,486,False,False,339,486,147
+2026-03-08,Sunday,Breakfast,Continental,491,False,True,226,491,265
+2026-03-08,Sunday,Lunch,South Indian,491,False,True,314,491,177
+2026-03-08,Sunday,Dinner,Standard,491,False,True,279,491,212
+2026-03-09,Monday,Breakfast,Biryani / Special,508,False,False,404,508,104
+2026-03-09,Monday,Lunch,Standard,508,False,False,475,508,33
+2026-03-09,Monday,Dinner,Biryani / Special,508,False,False,481,508,27
+2026-03-10,Tuesday,Breakfast,Standard,473,False,False,346,473,127
+2026-03-10,Tuesday,Lunch,Standard,473,False,False,427,473,46
+2026-03-10,Tuesday,Dinner,Standard,473,False,False,382,473,91
+2026-03-11,Wednesday,Breakfast,Continental,494,False,False,305,494,189
+2026-03-11,Wednesday,Lunch,Standard,494,False,False,441,494,53
+2026-03-11,Wednesday,Dinner,Standard,494,False,False,397,494,97
+2026-03-12,Thursday,Breakfast,Continental,509,False,False,348,509,161
+2026-03-12,Thursday,Lunch,Standard,509,False,False,460,509,49
+2026-03-12,Thursday,Dinner,Continental,509,False,False,418,509,91
+2026-03-13,Friday,Breakfast,Biryani / Special,497,False,False,383,497,114
+2026-03-13,Friday,Lunch,Continental,497,False,False,382,497,115
+2026-03-13,Friday,Dinner,Standard,497,False,False,414,497,83
+2026-03-14,Saturday,Breakfast,Biryani / Special,498,False,False,312,498,186
+2026-03-14,Saturday,Lunch,South Indian,498,False,False,368,498,130
+2026-03-14,Saturday,Dinner,Comfort Food,498,False,False,298,498,200
+2026-03-15,Sunday,Breakfast,Standard,489,False,False,205,489,284
+2026-03-15,Sunday,Lunch,South Indian,489,False,False,286,489,203
+2026-03-15,Sunday,Dinner,Standard,489,False,False,261,489,228
+2026-03-16,Monday,Breakfast,Comfort Food,499,False,False,307,499,192
+2026-03-16,Monday,Lunch,Standard,499,False,False,470,499,29
+2026-03-16,Monday,Dinner,Standard,499,False,False,423,499,76
+2026-03-17,Tuesday,Breakfast,Biryani / Special,514,False,False,428,514,86
+2026-03-17,Tuesday,Lunch,Standard,514,False,False,454,514,60
+2026-03-17,Tuesday,Dinner,Standard,514,False,False,438,514,76
+2026-03-18,Wednesday,Breakfast,Standard,517,True,False,233,517,284
+2026-03-18,Wednesday,Lunch,Biryani / Special,517,True,False,324,517,193
+2026-03-18,Wednesday,Dinner,Standard,517,True,False,232,517,285
+2026-03-19,Thursday,Breakfast,Comfort Food,492,False,False,318,492,174
+2026-03-19,Thursday,Lunch,Comfort Food,492,False,False,431,492,61
+2026-03-19,Thursday,Dinner,Continental,492,False,False,365,492,127
+2026-03-20,Friday,Breakfast,Comfort Food,496,False,False,323,496,173
+2026-03-20,Friday,Lunch,Comfort Food,496,False,False,394,496,102
+2026-03-20,Friday,Dinner,Standard,496,False,False,428,496,68
+2026-03-21,Saturday,Breakfast,South Indian,502,False,False,291,502,211
+2026-03-21,Saturday,Lunch,Standard,502,False,False,358,502,144
+2026-03-21,Saturday,Dinner,Standard,502,False,False,308,502,194
+2026-03-22,Sunday,Breakfast,Standard,510,False,False,256,510,254
+2026-03-22,Sunday,Lunch,South Indian,510,False,False,297,510,213
+2026-03-22,Sunday,Dinner,South Indian,510,False,False,262,510,248
+2026-03-23,Monday,Breakfast,Standard,508,False,False,390,508,118
+2026-03-23,Monday,Lunch,Standard,508,False,False,441,508,67
+2026-03-23,Monday,Dinner,Comfort Food,508,False,False,377,508,131
+2026-03-24,Tuesday,Breakfast,Biryani / Special,512,False,False,411,512,101
+2026-03-24,Tuesday,Lunch,Biryani / Special,512,False,False,491,512,21
+2026-03-24,Tuesday,Dinner,South Indian,512,False,False,436,512,76
+2026-03-25,Wednesday,Breakfast,Comfort Food,489,False,True,356,489,133
+2026-03-25,Wednesday,Lunch,Comfort Food,489,False,True,443,489,46
+2026-03-25,Wednesday,Dinner,Standard,489,False,True,446,489,43
+2026-03-26,Thursday,Breakfast,Standard,495,False,False,360,495,135
+2026-03-26,Thursday,Lunch,Continental,495,False,False,411,495,84
+2026-03-26,Thursday,Dinner,Biryani / Special,495,False,False,445,495,50
+2026-03-27,Friday,Breakfast,South Indian,491,False,False,360,491,131
+2026-03-27,Friday,Lunch,Comfort Food,491,False,False,416,491,75
+2026-03-27,Friday,Dinner,Comfort Food,491,False,False,358,491,133
+2026-03-28,Saturday,Breakfast,Standard,490,False,False,292,490,198
+2026-03-28,Saturday,Lunch,Continental,490,False,False,336,490,154
+2026-03-28,Saturday,Dinner,Comfort Food,490,False,False,299,490,191
+2026-03-29,Sunday,Breakfast,South Indian,505,False,False,259,505,246
+2026-03-29,Sunday,Lunch,Continental,505,False,False,278,505,227
+2026-03-29,Sunday,Dinner,Standard,505,False,False,283,505,222
+2026-03-30,Monday,Breakfast,Biryani / Special,499,False,False,382,499,117
+2026-03-30,Monday,Lunch,Standard,499,False,False,442,499,57
+2026-03-30,Monday,Dinner,Standard,499,False,False,411,499,88
+2026-03-31,Tuesday,Breakfast,Continental,500,False,False,317,500,183
+2026-03-31,Tuesday,Lunch,Standard,500,False,False,437,500,63
+2026-03-31,Tuesday,Dinner,Standard,500,False,False,414,500,86
+2026-04-01,Wednesday,Breakfast,Comfort Food,513,False,False,352,513,161
+2026-04-01,Wednesday,Lunch,Biryani / Special,513,False,False,536,513,0
+2026-04-01,Wednesday,Dinner,Standard,513,False,False,409,513,104
+2026-04-02,Thursday,Breakfast,Biryani / Special,505,False,True,443,505,62
+2026-04-02,Thursday,Lunch,Standard,505,False,True,482,505,23
+2026-04-02,Thursday,Dinner,Biryani / Special,505,False,True,489,505,16
+2026-04-03,Friday,Breakfast,South Indian,503,False,False,396,503,107
+2026-04-03,Friday,Lunch,Biryani / Special,503,False,False,494,503,9
+2026-04-03,Friday,Dinner,Continental,503,False,False,373,503,130
+2026-04-04,Saturday,Breakfast,Standard,497,True,False,197,497,300
+2026-04-04,Saturday,Lunch,Biryani / Special,497,True,False,211,497,286
+2026-04-04,Saturday,Dinner,Biryani / Special,497,True,False,212,497,285
+2026-04-05,Sunday,Breakfast,Standard,495,False,False,228,495,267
+2026-04-05,Sunday,Lunch,South Indian,495,False,False,322,495,173
+2026-04-05,Sunday,Dinner,South Indian,495,False,False,275,495,220
+2026-04-06,Monday,Breakfast,Biryani / Special,497,False,True,422,497,75
+2026-04-06,Monday,Lunch,Comfort Food,497,False,True,420,497,77
+2026-04-06,Monday,Dinner,South Indian,497,False,True,481,497,16
+2026-04-07,Tuesday,Breakfast,Comfort Food,498,False,False,338,498,160
+2026-04-07,Tuesday,Lunch,Comfort Food,498,False,False,426,498,72
+2026-04-07,Tuesday,Dinner,Standard,498,False,False,397,498,101
+2026-04-08,Wednesday,Breakfast,South Indian,493,False,False,353,493,140
+2026-04-08,Wednesday,Lunch,South Indian,493,False,False,468,493,25
+2026-04-08,Wednesday,Dinner,Continental,493,False,False,399,493,94
+2026-04-09,Thursday,Breakfast,Comfort Food,507,False,False,345,507,162
+2026-04-09,Thursday,Lunch,Biryani / Special,507,False,False,532,507,0
+2026-04-09,Thursday,Dinner,Standard,507,False,False,405,507,102
+2026-04-10,Friday,Breakfast,Continental,515,False,False,338,515,177
+2026-04-10,Friday,Lunch,Standard,515,False,False,464,515,51
+2026-04-10,Friday,Dinner,Continental,515,False,False,422,515,93
+2026-04-11,Saturday,Breakfast,Comfort Food,503,False,False,256,503,247
+2026-04-11,Saturday,Lunch,Biryani / Special,503,False,False,381,503,122
+2026-04-11,Saturday,Dinner,Standard,503,False,False,359,503,144
+2026-04-12,Sunday,Breakfast,Continental,507,False,False,233,507,274
+2026-04-12,Sunday,Lunch,Standard,507,False,False,284,507,223
+2026-04-12,Sunday,Dinner,Biryani / Special,507,False,False,303,507,204
+2026-04-13,Monday,Breakfast,Standard,491,False,False,338,491,153
+2026-04-13,Monday,Lunch,Continental,491,False,False,409,491,82
+2026-04-13,Monday,Dinner,Standard,491,False,False,407,491,84
+2026-04-14,Tuesday,Breakfast,Standard,505,False,True,397,505,108
+2026-04-14,Tuesday,Lunch,Standard,505,False,True,512,505,0
+2026-04-14,Tuesday,Dinner,Comfort Food,505,False,True,412,505,93
+2026-04-15,Wednesday,Breakfast,Continental,492,False,False,327,492,165
+2026-04-15,Wednesday,Lunch,Biryani / Special,492,False,False,511,492,0
+2026-04-15,Wednesday,Dinner,Standard,492,False,False,401,492,91
+2026-04-16,Thursday,Breakfast,Standard,493,False,True,372,493,121
+2026-04-16,Thursday,Lunch,Standard,493,False,True,502,493,0
+2026-04-16,Thursday,Dinner,Biryani / Special,493,False,True,503,493,0
+2026-04-17,Friday,Breakfast,Standard,506,False,False,347,506,159
+2026-04-17,Friday,Lunch,Comfort Food,506,False,False,432,506,74
+2026-04-17,Friday,Dinner,Standard,506,False,False,415,506,91
+2026-04-18,Saturday,Breakfast,South Indian,522,False,False,304,522,218
+2026-04-18,Saturday,Lunch,Biryani / Special,522,False,False,432,522,90
+2026-04-18,Saturday,Dinner,Comfort Food,522,False,False,347,522,175
+2026-04-19,Sunday,Breakfast,South Indian,498,True,False,159,498,339
+2026-04-19,Sunday,Lunch,Standard,498,True,False,172,498,326
+2026-04-19,Sunday,Dinner,Standard,498,True,False,135,498,363
+2026-04-20,Monday,Breakfast,Standard,503,False,True,414,503,89
+2026-04-20,Monday,Lunch,Continental,503,False,True,453,503,50
+2026-04-20,Monday,Dinner,Comfort Food,503,False,True,428,503,75
+2026-04-21,Tuesday,Breakfast,Biryani / Special,507,False,False,424,507,83
+2026-04-21,Tuesday,Lunch,Comfort Food,507,False,False,428,507,79
+2026-04-21,Tuesday,Dinner,Continental,507,False,False,394,507,113
+2026-04-22,Wednesday,Breakfast,Comfort Food,482,False,False,342,482,140
+2026-04-22,Wednesday,Lunch,Continental,482,False,False,414,482,68
+2026-04-22,Wednesday,Dinner,Biryani / Special,482,False,False,465,482,17
+2026-04-23,Thursday,Breakfast,Comfort Food,502,False,True,362,502,140
+2026-04-23,Thursday,Lunch,Comfort Food,502,False,True,486,502,16
+2026-04-23,Thursday,Dinner,Comfort Food,502,False,True,424,502,78
+2026-04-24,Friday,Breakfast,Comfort Food,489,False,False,319,489,170
+2026-04-24,Friday,Lunch,South Indian,489,False,False,471,489,18
+2026-04-24,Friday,Dinner,South Indian,489,False,False,397,489,92
+2026-04-25,Saturday,Breakfast,Continental,502,False,True,321,502,181
+2026-04-25,Saturday,Lunch,Biryani / Special,502,False,True,429,502,73
+2026-04-25,Saturday,Dinner,Biryani / Special,502,False,True,409,502,93
+2026-04-26,Sunday,Breakfast,South Indian,506,False,False,264,506,242
+2026-04-26,Sunday,Lunch,Standard,506,False,False,315,506,191
+2026-04-26,Sunday,Dinner,Standard,506,False,False,238,506,268
+2026-04-27,Monday,Breakfast,Continental,502,False,False,298,502,204
+2026-04-27,Monday,Lunch,Standard,502,False,False,469,502,33
+2026-04-27,Monday,Dinner,Comfort Food,502,False,False,393,502,109
+2026-04-28,Tuesday,Breakfast,Biryani / Special,482,False,False,377,482,105
+2026-04-28,Tuesday,Lunch,Comfort Food,482,False,False,371,482,111
+2026-04-28,Tuesday,Dinner,South Indian,482,False,False,409,482,73
+2026-04-29,Wednesday,Breakfast,Standard,488,False,True,378,488,110
+2026-04-29,Wednesday,Lunch,Comfort Food,488,False,True,483,488,5
+2026-04-29,Wednesday,Dinner,Standard,488,False,True,426,488,62
+2026-04-30,Thursday,Breakfast,Standard,494,False,True,359,494,135
+2026-04-30,Thursday,Lunch,Standard,494,False,True,478,494,16
+2026-04-30,Thursday,Dinner,Standard,494,False,True,419,494,75
+2026-05-01,Friday,Breakfast,Continental,498,False,False,335,498,163
+2026-05-01,Friday,Lunch,South Indian,498,False,False,481,498,17
+2026-05-01,Friday,Dinner,South Indian,498,False,False,414,498,84
+2026-05-02,Saturday,Breakfast,South Indian,497,False,False,241,497,256
+2026-05-02,Saturday,Lunch,Standard,497,False,False,379,497,118
+2026-05-02,Saturday,Dinner,Standard,497,False,False,313,497,184
+2026-05-03,Sunday,Breakfast,Biryani / Special,500,False,False,272,500,228
+2026-05-03,Sunday,Lunch,Standard,500,False,False,320,500,180
+2026-05-03,Sunday,Dinner,Standard,500,False,False,222,500,278
+2026-05-04,Monday,Breakfast,Standard,493,False,False,326,493,167
+2026-05-04,Monday,Lunch,Comfort Food,493,False,False,447,493,46
+2026-05-04,Monday,Dinner,Continental,493,False,False,404,493,89
+2026-05-05,Tuesday,Breakfast,South Indian,523,False,True,429,523,94
+2026-05-05,Tuesday,Lunch,Biryani / Special,523,False,True,548,523,0
+2026-05-05,Tuesday,Dinner,Standard,523,False,True,451,523,72
+2026-05-06,Wednesday,Breakfast,Standard,486,False,False,350,486,136
+2026-05-06,Wednesday,Lunch,Standard,486,False,False,426,486,60
+2026-05-06,Wednesday,Dinner,Standard,486,False,False,390,486,96
+2026-05-07,Thursday,Breakfast,Comfort Food,474,False,False,324,474,150
+2026-05-07,Thursday,Lunch,Standard,474,False,False,434,474,40
+2026-05-07,Thursday,Dinner,Continental,474,False,False,372,474,102
+2026-05-08,Friday,Breakfast,Comfort Food,505,False,False,315,505,190
+2026-05-08,Friday,Lunch,Biryani / Special,505,False,False,479,505,26
+2026-05-08,Friday,Dinner,Continental,505,False,False,407,505,98
+2026-05-09,Saturday,Breakfast,Standard,502,False,False,225,502,277
+2026-05-09,Saturday,Lunch,Standard,502,False,False,325,502,177
+2026-05-09,Saturday,Dinner,Biryani / Special,502,False,False,374,502,128
+2026-05-10,Sunday,Breakfast,Standard,493,False,False,225,493,268
+2026-05-10,Sunday,Lunch,Standard,493,False,False,307,493,186
+2026-05-10,Sunday,Dinner,Standard,493,False,False,252,493,241
+2026-05-11,Monday,Breakfast,Biryani / Special,492,False,False,430,492,62
+2026-05-11,Monday,Lunch,Standard,492,False,False,446,492,46
+2026-05-11,Monday,Dinner,Standard,492,False,False,405,492,87
+2026-05-12,Tuesday,Breakfast,Continental,504,True,False,232,504,272
+2026-05-12,Tuesday,Lunch,Standard,504,True,False,261,504,243
+2026-05-12,Tuesday,Dinner,Standard,504,True,False,259,504,245
+2026-05-13,Wednesday,Breakfast,Standard,502,False,False,389,502,113
+2026-05-13,Wednesday,Lunch,Comfort Food,502,False,False,446,502,56
+2026-05-13,Wednesday,Dinner,Biryani / Special,502,False,False,454,502,48
+2026-05-14,Thursday,Breakfast,Biryani / Special,510,False,False,385,510,125
+2026-05-14,Thursday,Lunch,Standard,510,False,False,455,510,55
+2026-05-14,Thursday,Dinner,Biryani / Special,510,False,False,483,510,27
+2026-05-15,Friday,Breakfast,Standard,485,False,False,360,485,125
+2026-05-15,Friday,Lunch,Continental,485,False,False,430,485,55
+2026-05-15,Friday,Dinner,Comfort Food,485,False,False,415,485,70
+2026-05-16,Saturday,Breakfast,South Indian,489,False,False,263,489,226
+2026-05-16,Saturday,Lunch,Standard,489,False,False,370,489,119
+2026-05-16,Saturday,Dinner,Comfort Food,489,False,False,301,489,188
+2026-05-17,Sunday,Breakfast,Continental,497,False,False,199,497,298
+2026-05-17,Sunday,Lunch,Standard,497,False,False,304,497,193
+2026-05-17,Sunday,Dinner,South Indian,497,False,False,259,497,238
+2026-05-18,Monday,Breakfast,Standard,483,False,False,343,483,140
+2026-05-18,Monday,Lunch,Standard,483,False,False,438,483,45
+2026-05-18,Monday,Dinner,Biryani / Special,483,False,False,459,483,24
+2026-05-19,Tuesday,Breakfast,Biryani / Special,502,False,False,373,502,129
+2026-05-19,Tuesday,Lunch,South Indian,502,False,False,472,502,30
+2026-05-19,Tuesday,Dinner,South Indian,502,False,False,441,502,61
+2026-05-20,Wednesday,Breakfast,South Indian,502,False,False,345,502,157
+2026-05-20,Wednesday,Lunch,Biryani / Special,502,False,False,509,502,0
+2026-05-20,Wednesday,Dinner,Comfort Food,502,False,False,389,502,113
+2026-05-21,Thursday,Breakfast,Biryani / Special,500,False,True,443,500,57
+2026-05-21,Thursday,Lunch,Standard,500,False,True,483,500,17
+2026-05-21,Thursday,Dinner,Continental,500,False,True,417,500,83
+2026-05-22,Friday,Breakfast,Biryani / Special,489,True,False,200,489,289
+2026-05-22,Friday,Lunch,Comfort Food,489,True,False,225,489,264
+2026-05-22,Friday,Dinner,South Indian,489,True,False,227,489,262
+2026-05-23,Saturday,Breakfast,Standard,488,False,False,264,488,224
+2026-05-23,Saturday,Lunch,Biryani / Special,488,False,False,398,488,90
+2026-05-23,Saturday,Dinner,Standard,488,False,False,309,488,179
+2026-05-24,Sunday,Breakfast,Standard,497,False,False,206,497,291
+2026-05-24,Sunday,Lunch,Comfort Food,497,False,False,320,497,177
+2026-05-24,Sunday,Dinner,Standard,497,False,False,266,497,231
+2026-05-25,Monday,Breakfast,Standard,498,False,False,351,498,147
+2026-05-25,Monday,Lunch,Standard,498,False,False,494,498,4
+2026-05-25,Monday,Dinner,Standard,498,False,False,388,498,110
+2026-05-26,Tuesday,Breakfast,Biryani / Special,473,False,False,390,473,83
+2026-05-26,Tuesday,Lunch,Biryani / Special,473,False,False,471,473,2
+2026-05-26,Tuesday,Dinner,Continental,473,False,False,366,473,107
+2026-05-27,Wednesday,Breakfast,Biryani / Special,508,False,False,374,508,134
+2026-05-27,Wednesday,Lunch,Standard,508,False,False,466,508,42
+2026-05-27,Wednesday,Dinner,South Indian,508,False,False,419,508,89
+2026-05-28,Thursday,Breakfast,South Indian,492,True,False,202,492,290
+2026-05-28,Thursday,Lunch,Standard,492,True,False,267,492,225
+2026-05-28,Thursday,Dinner,Standard,492,True,False,240,492,252
+2026-05-29,Friday,Breakfast,South Indian,497,False,False,355,497,142
+2026-05-29,Friday,Lunch,Continental,497,False,False,423,497,74
+2026-05-29,Friday,Dinner,South Indian,497,False,False,445,497,52
+2026-05-30,Saturday,Breakfast,Comfort Food,483,False,False,280,483,203
+2026-05-30,Saturday,Lunch,Continental,483,False,False,303,483,180
+2026-05-30,Saturday,Dinner,Standard,483,False,False,294,483,189
+2026-05-31,Sunday,Breakfast,Biryani / Special,487,False,False,280,487,207
+2026-05-31,Sunday,Lunch,Biryani / Special,487,False,False,323,487,164
+2026-05-31,Sunday,Dinner,Continental,487,False,False,247,487,240
+2026-06-01,Monday,Breakfast,Continental,509,False,False,341,509,168
+2026-06-01,Monday,Lunch,Biryani / Special,509,False,False,534,509,0
+2026-06-01,Monday,Dinner,Standard,509,False,False,429,509,80
+2026-06-02,Tuesday,Breakfast,Standard,500,False,False,356,500,144
+2026-06-02,Tuesday,Lunch,Standard,500,False,False,454,500,46
+2026-06-02,Tuesday,Dinner,Standard,500,False,False,392,500,108
+2026-06-03,Wednesday,Breakfast,Standard,495,False,False,356,495,139
+2026-06-03,Wednesday,Lunch,Standard,495,False,False,475,495,20
+2026-06-03,Wednesday,Dinner,South Indian,495,False,False,450,495,45
+2026-06-04,Thursday,Breakfast,Biryani / Special,481,False,False,354,481,127
+2026-06-04,Thursday,Lunch,Standard,481,False,False,442,481,39
+2026-06-04,Thursday,Dinner,Standard,481,False,False,381,481,100
+2026-06-05,Friday,Breakfast,Standard,484,False,False,324,484,160
+2026-06-05,Friday,Lunch,South Indian,484,False,False,463,484,21
+2026-06-05,Friday,Dinner,Biryani / Special,484,False,False,413,484,71
+2026-06-06,Saturday,Breakfast,Standard,491,False,False,281,491,210
+2026-06-06,Saturday,Lunch,Standard,491,False,False,334,491,157
+2026-06-06,Saturday,Dinner,Biryani / Special,491,False,False,354,491,137
+2026-06-07,Sunday,Breakfast,Standard,496,False,False,230,496,266
+2026-06-07,Sunday,Lunch,South Indian,496,False,False,337,496,159
+2026-06-07,Sunday,Dinner,Biryani / Special,496,False,False,295,496,201
+2026-06-08,Monday,Breakfast,Standard,506,False,False,372,506,134
+2026-06-08,Monday,Lunch,Biryani / Special,506,False,False,497,506,9
+2026-06-08,Monday,Dinner,Comfort Food,506,False,False,386,506,120
+2026-06-09,Tuesday,Breakfast,Biryani / Special,486,False,False,377,486,109
+2026-06-09,Tuesday,Lunch,Comfort Food,486,False,False,426,486,60
+2026-06-09,Tuesday,Dinner,South Indian,486,False,False,426,486,60
+2026-06-10,Wednesday,Breakfast,Standard,499,False,False,319,499,180
+2026-06-10,Wednesday,Lunch,Comfort Food,499,False,False,430,499,69
+2026-06-10,Wednesday,Dinner,Standard,499,False,False,413,499,86
+2026-06-11,Thursday,Breakfast,Comfort Food,504,False,False,328,504,176
+2026-06-11,Thursday,Lunch,Comfort Food,504,False,False,447,504,57
+2026-06-11,Thursday,Dinner,Continental,504,False,False,395,504,109
+2026-06-12,Friday,Breakfast,Standard,500,False,False,342,500,158
+2026-06-12,Friday,Lunch,Standard,500,False,False,454,500,46
+2026-06-12,Friday,Dinner,Standard,500,False,False,401,500,99
+2026-06-13,Saturday,Breakfast,Continental,504,False,True,251,504,253
+2026-06-13,Saturday,Lunch,Standard,504,False,True,398,504,106
+2026-06-13,Saturday,Dinner,South Indian,504,False,True,367,504,137
+2026-06-14,Sunday,Breakfast,Comfort Food,500,False,True,250,500,250
+2026-06-14,Sunday,Lunch,Continental,500,False,True,294,500,206
+2026-06-14,Sunday,Dinner,Biryani / Special,500,False,True,348,500,152
+2026-06-15,Monday,Breakfast,South Indian,483,False,False,320,483,163
+2026-06-15,Monday,Lunch,Standard,483,False,False,429,483,54
+2026-06-15,Monday,Dinner,Standard,483,False,False,382,483,101
+2026-06-16,Tuesday,Breakfast,Standard,499,False,False,354,499,145
+2026-06-16,Tuesday,Lunch,South Indian,499,False,False,485,499,14
+2026-06-16,Tuesday,Dinner,Comfort Food,499,False,False,381,499,118
+2026-06-17,Wednesday,Breakfast,Biryani / Special,511,False,False,430,511,81
+2026-06-17,Wednesday,Lunch,Standard,511,False,False,451,511,60
+2026-06-17,Wednesday,Dinner,Standard,511,False,False,408,511,103
+2026-06-18,Thursday,Breakfast,South Indian,514,False,False,364,514,150
+2026-06-18,Thursday,Lunch,Standard,514,False,False,453,514,61
+2026-06-18,Thursday,Dinner,Standard,514,False,False,433,514,81
+2026-06-19,Friday,Breakfast,Comfort Food,491,False,False,326,491,165
+2026-06-19,Friday,Lunch,Standard,491,False,False,452,491,39
+2026-06-19,Friday,Dinner,Biryani / Special,491,False,False,470,491,21
+2026-06-20,Saturday,Breakfast,South Indian,486,False,False,263,486,223
+2026-06-20,Saturday,Lunch,Biryani / Special,486,False,False,373,486,113
+2026-06-20,Saturday,Dinner,Continental,486,False,False,302,486,184
+2026-06-21,Sunday,Breakfast,Standard,512,False,False,239,512,273
+2026-06-21,Sunday,Lunch,South Indian,512,False,False,282,512,230
+2026-06-21,Sunday,Dinner,Comfort Food,512,False,False,265,512,247
+2026-06-22,Monday,Breakfast,South Indian,508,False,False,379,508,129
+2026-06-22,Monday,Lunch,South Indian,508,False,False,500,508,8
+2026-06-22,Monday,Dinner,Standard,508,False,False,428,508,80
+2026-06-23,Tuesday,Breakfast,South Indian,496,False,False,346,496,150
+2026-06-23,Tuesday,Lunch,Standard,496,False,False,454,496,42
+2026-06-23,Tuesday,Dinner,Biryani / Special,496,False,False,463,496,33
+2026-06-24,Wednesday,Breakfast,Comfort Food,508,True,False,174,508,334
+2026-06-24,Wednesday,Lunch,South Indian,508,True,False,299,508,209
+2026-06-24,Wednesday,Dinner,Biryani / Special,508,True,False,256,508,252
+2026-06-25,Thursday,Breakfast,Comfort Food,502,False,True,385,502,117
+2026-06-25,Thursday,Lunch,Standard,502,False,True,499,502,3
+2026-06-25,Thursday,Dinner,Standard,502,False,True,448,502,54
+2026-06-26,Friday,Breakfast,South Indian,498,False,False,355,498,143
+2026-06-26,Friday,Lunch,Standard,498,False,False,416,498,82
+2026-06-26,Friday,Dinner,South Indian,498,False,False,442,498,56
+2026-06-27,Saturday,Breakfast,Standard,503,True,False,155,503,348
+2026-06-27,Saturday,Lunch,Standard,503,True,False,210,503,293
+2026-06-27,Saturday,Dinner,Continental,503,True,False,149,503,354
+2026-06-28,Sunday,Breakfast,Standard,485,False,False,181,485,304
+2026-06-28,Sunday,Lunch,Continental,485,False,False,254,485,231
+2026-06-28,Sunday,Dinner,Standard,485,False,False,271,485,214
+2026-06-29,Monday,Breakfast,Comfort Food,497,False,False,306,497,191
+2026-06-29,Monday,Lunch,Biryani / Special,497,False,False,479,497,18
+2026-06-29,Monday,Dinner,Standard,497,False,False,437,497,60
+2026-06-30,Tuesday,Breakfast,Standard,497,False,False,354,497,143
+2026-06-30,Tuesday,Lunch,Standard,497,False,False,425,497,72
+2026-06-30,Tuesday,Dinner,Continental,497,False,False,417,497,80
+2026-07-01,Wednesday,Breakfast,Continental,502,False,False,333,502,169
+2026-07-01,Wednesday,Lunch,Continental,502,False,False,442,502,60
+2026-07-01,Wednesday,Dinner,South Indian,502,False,False,439,502,63
+2026-07-02,Thursday,Breakfast,Continental,501,False,True,376,501,125
+2026-07-02,Thursday,Lunch,Biryani / Special,501,False,True,526,501,0
+2026-07-02,Thursday,Dinner,Standard,501,False,True,476,501,25
+2026-07-03,Friday,Breakfast,Continental,484,False,True,361,484,123
+2026-07-03,Friday,Lunch,Standard,484,False,True,465,484,19
+2026-07-03,Friday,Dinner,Standard,484,False,True,428,484,56
+2026-07-04,Saturday,Breakfast,South Indian,484,False,False,289,484,195
+2026-07-04,Saturday,Lunch,Continental,484,False,False,309,484,175
+2026-07-04,Saturday,Dinner,Standard,484,False,False,309,484,175
+2026-07-05,Sunday,Breakfast,South Indian,524,False,False,248,524,276
+2026-07-05,Sunday,Lunch,Biryani / Special,524,False,False,328,524,196
+2026-07-05,Sunday,Dinner,Standard,524,False,False,280,524,244
+2026-07-06,Monday,Breakfast,Standard,498,True,False,196,498,302
+2026-07-06,Monday,Lunch,Biryani / Special,498,True,False,319,498,179
+2026-07-06,Monday,Dinner,Standard,498,True,False,256,498,242
+2026-07-07,Tuesday,Breakfast,Standard,513,False,True,404,513,109
+2026-07-07,Tuesday,Lunch,Comfort Food,513,False,True,470,513,43
+2026-07-07,Tuesday,Dinner,South Indian,513,False,True,461,513,52
+2026-07-08,Wednesday,Breakfast,Continental,494,False,False,352,494,142
+2026-07-08,Wednesday,Lunch,Standard,494,False,False,447,494,47
+2026-07-08,Wednesday,Dinner,Continental,494,False,False,406,494,88
+2026-07-09,Thursday,Breakfast,Standard,517,False,False,365,517,152
+2026-07-09,Thursday,Lunch,Standard,517,False,False,454,517,63
+2026-07-09,Thursday,Dinner,Comfort Food,517,False,False,390,517,127
+2026-07-10,Friday,Breakfast,Continental,489,False,False,319,489,170
+2026-07-10,Friday,Lunch,South Indian,489,False,False,511,489,0
+2026-07-10,Friday,Dinner,South Indian,489,False,False,415,489,74
+2026-07-11,Saturday,Breakfast,Standard,500,False,False,275,500,225
+2026-07-11,Saturday,Lunch,South Indian,500,False,False,360,500,140
+2026-07-11,Saturday,Dinner,Continental,500,False,False,277,500,223
+2026-07-12,Sunday,Breakfast,Standard,481,False,False,203,481,278
+2026-07-12,Sunday,Lunch,Comfort Food,481,False,False,236,481,245
+2026-07-12,Sunday,Dinner,South Indian,481,False,False,303,481,178
+2026-07-13,Monday,Breakfast,Standard,498,False,False,365,498,133
+2026-07-13,Monday,Lunch,Biryani / Special,498,False,False,523,498,0
+2026-07-13,Monday,Dinner,South Indian,498,False,False,450,498,48
+2026-07-14,Tuesday,Breakfast,Biryani / Special,503,False,False,389,503,114
+2026-07-14,Tuesday,Lunch,Standard,503,False,False,450,503,53
+2026-07-14,Tuesday,Dinner,Biryani / Special,503,False,False,481,503,22
+2026-07-15,Wednesday,Breakfast,Comfort Food,496,False,False,306,496,190
+2026-07-15,Wednesday,Lunch,Standard,496,False,False,423,496,73
+2026-07-15,Wednesday,Dinner,Continental,496,False,False,411,496,85
+2026-07-16,Thursday,Breakfast,Standard,484,False,False,334,484,150
+2026-07-16,Thursday,Lunch,Standard,484,False,False,398,484,86
+2026-07-16,Thursday,Dinner,Continental,484,False,False,386,484,98
+2026-07-17,Friday,Breakfast,Standard,515,False,False,376,515,139
+2026-07-17,Friday,Lunch,Standard,515,False,False,458,515,57
+2026-07-17,Friday,Dinner,Continental,515,False,False,443,515,72
+2026-07-18,Saturday,Breakfast,Standard,496,False,False,278,496,218
+2026-07-18,Saturday,Lunch,Standard,496,False,False,349,496,147
+2026-07-18,Saturday,Dinner,Comfort Food,496,False,False,286,496,210
+2026-07-19,Sunday,Breakfast,Comfort Food,498,True,False,109,498,389
+2026-07-19,Sunday,Lunch,Standard,498,True,False,164,498,334
+2026-07-19,Sunday,Dinner,Standard,498,True,False,159,498,339
+2026-07-20,Monday,Breakfast,Biryani / Special,509,False,False,405,509,104
+2026-07-20,Monday,Lunch,Biryani / Special,509,False,False,534,509,0
+2026-07-20,Monday,Dinner,Standard,509,False,False,415,509,94
+2026-07-21,Tuesday,Breakfast,Standard,511,True,False,196,511,315
+2026-07-21,Tuesday,Lunch,South Indian,511,True,False,276,511,235
+2026-07-21,Tuesday,Dinner,Continental,511,True,False,276,511,235
+2026-07-22,Wednesday,Breakfast,South Indian,499,False,False,399,499,100
+2026-07-22,Wednesday,Lunch,Continental,499,False,False,423,499,76
+2026-07-22,Wednesday,Dinner,Comfort Food,499,False,False,386,499,113
+2026-07-23,Thursday,Breakfast,Standard,506,False,False,334,506,172
+2026-07-23,Thursday,Lunch,South Indian,506,False,False,479,506,27
+2026-07-23,Thursday,Dinner,Comfort Food,506,False,False,376,506,130
+2026-07-24,Friday,Breakfast,Comfort Food,499,True,False,203,499,296
+2026-07-24,Friday,Lunch,Continental,499,True,False,288,499,211
+2026-07-24,Friday,Dinner,Comfort Food,499,True,False,239,499,260
+2026-07-25,Saturday,Breakfast,Continental,510,False,False,278,510,232
+2026-07-25,Saturday,Lunch,Continental,510,False,False,367,510,143
+2026-07-25,Saturday,Dinner,Standard,510,False,False,321,510,189
+2026-07-26,Sunday,Breakfast,Standard,489,False,True,214,489,275
+2026-07-26,Sunday,Lunch,South Indian,489,False,True,303,489,186
+2026-07-26,Sunday,Dinner,Standard,489,False,True,243,489,246
+2026-07-27,Monday,Breakfast,South Indian,501,False,False,352,501,149
+2026-07-27,Monday,Lunch,South Indian,501,False,False,428,501,73
+2026-07-27,Monday,Dinner,Continental,501,False,False,382,501,119
+2026-07-28,Tuesday,Breakfast,Biryani / Special,486,False,False,351,486,135
+2026-07-28,Tuesday,Lunch,Biryani / Special,486,False,False,511,486,0
+2026-07-28,Tuesday,Dinner,Continental,486,False,False,393,486,93
+2026-07-29,Wednesday,Breakfast,Comfort Food,497,False,False,334,497,163
+2026-07-29,Wednesday,Lunch,Standard,497,False,False,444,497,53
+2026-07-29,Wednesday,Dinner,Standard,497,False,False,417,497,80
+2026-07-30,Thursday,Breakfast,Continental,490,False,False,309,490,181
+2026-07-30,Thursday,Lunch,Biryani / Special,490,False,False,510,490,0
+2026-07-30,Thursday,Dinner,South Indian,490,False,False,390,490,100
+2026-07-31,Friday,Breakfast,South Indian,498,False,False,360,498,138
+2026-07-31,Friday,Lunch,Standard,498,False,False,481,498,17
+2026-07-31,Friday,Dinner,Standard,498,False,False,412,498,86
+2026-08-01,Saturday,Breakfast,Continental,499,False,False,272,499,227
+2026-08-01,Saturday,Lunch,Biryani / Special,499,False,False,395,499,104
+2026-08-01,Saturday,Dinner,Comfort Food,499,False,False,292,499,207
+2026-08-02,Sunday,Breakfast,Standard,497,False,False,233,497,264
+2026-08-02,Sunday,Lunch,South Indian,497,False,False,323,497,174
+2026-08-02,Sunday,Dinner,Comfort Food,497,False,False,244,497,253
+2026-08-03,Monday,Breakfast,Continental,492,False,False,347,492,145
+2026-08-03,Monday,Lunch,Biryani / Special,492,False,False,484,492,8
+2026-08-03,Monday,Dinner,South Indian,492,False,False,425,492,67
+2026-08-04,Tuesday,Breakfast,Continental,505,False,False,326,505,179
+2026-08-04,Tuesday,Lunch,Standard,505,False,False,477,505,28
+2026-08-04,Tuesday,Dinner,Biryani / Special,505,False,False,493,505,12
+2026-08-05,Wednesday,Breakfast,Comfort Food,499,False,False,375,499,124
+2026-08-05,Wednesday,Lunch,Standard,499,False,False,435,499,64
+2026-08-05,Wednesday,Dinner,Biryani / Special,499,False,False,488,499,11
+2026-08-06,Thursday,Breakfast,Biryani / Special,503,False,False,385,503,118
+2026-08-06,Thursday,Lunch,Standard,503,False,False,433,503,70
+2026-08-06,Thursday,Dinner,Standard,503,False,False,400,503,103
+2026-08-07,Friday,Breakfast,Continental,492,True,False,199,492,293
+2026-08-07,Friday,Lunch,Standard,492,True,False,284,492,208
+2026-08-07,Friday,Dinner,South Indian,492,True,False,254,492,238
+2026-08-08,Saturday,Breakfast,Comfort Food,512,False,False,241,512,271
+2026-08-08,Saturday,Lunch,South Indian,512,False,False,404,512,108
+2026-08-08,Saturday,Dinner,Biryani / Special,512,False,False,374,512,138
+2026-08-09,Sunday,Breakfast,Standard,505,True,False,139,505,366
+2026-08-09,Sunday,Lunch,South Indian,505,True,False,187,505,318
+2026-08-09,Sunday,Dinner,Standard,505,True,False,136,505,369
+2026-08-10,Monday,Breakfast,Continental,513,False,False,323,513,190
+2026-08-10,Monday,Lunch,Comfort Food,513,False,False,424,513,89
+2026-08-10,Monday,Dinner,Standard,513,False,False,395,513,118
+2026-08-11,Tuesday,Breakfast,Biryani / Special,512,False,False,404,512,108
+2026-08-11,Tuesday,Lunch,South Indian,512,False,False,483,512,29
+2026-08-11,Tuesday,Dinner,Standard,512,False,False,414,512,98
+2026-08-12,Wednesday,Breakfast,Standard,489,False,False,326,489,163
+2026-08-12,Wednesday,Lunch,Standard,489,False,False,442,489,47
+2026-08-12,Wednesday,Dinner,Standard,489,False,False,414,489,75
+2026-08-13,Thursday,Breakfast,Comfort Food,503,False,False,376,503,127
+2026-08-13,Thursday,Lunch,Biryani / Special,503,False,False,508,503,0
+2026-08-13,Thursday,Dinner,Standard,503,False,False,411,503,92
+2026-08-14,Friday,Breakfast,Standard,505,False,False,364,505,141
+2026-08-14,Friday,Lunch,Standard,505,False,False,433,505,72
