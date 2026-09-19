@@ -1,0 +1,94 @@
+import type { SurplusListing, Claim } from './types';
+
+export const INITIAL_LISTINGS: SurplusListing[] = [
+  {
+    id: 'list-1',
+    providerId: 'h-1',
+    providerName: 'Grand Horizon Hotel & Buffet',
+    menuItem: 'Paneer Butter Masala & Steamed Rice',
+    quantity: 25,
+    readyByTime: '14:30',
+    pickupWindow: '14:30 - 16:30',
+    distanceKm: 1.2,
+    accessible: true,
+    postedAt: '2026-09-19T13:45:00Z',
+    status: 'available'
+  },
+  {
+    id: 'list-2',
+    providerId: 'h-2',
+    providerName: 'City Center Mess',
+    menuItem: 'Assorted Veg Thali Meal Boxes',
+    quantity: 40,
+    readyByTime: '15:00',
+    pickupWindow: '15:00 - 17:00',
+    distanceKm: 2.8,
+    accessible: true,
+    postedAt: '2026-09-19T14:10:00Z',
+    status: 'available'
+  },
+  {
+    id: 'list-3',
+    providerId: 'h-1',
+    providerName: 'Grand Horizon Hotel & Buffet',
+    menuItem: 'Fresh Baked Artisan Sandwich Trays',
+    quantity: 12,
+    readyByTime: '16:00',
+    pickupWindow: '16:00 - 18:00',
+    distanceKm: 0.8,
+    accessible: true,
+    postedAt: '2026-09-19T15:00:00Z',
+    status: 'available'
+  },
+  {
+    id: 'list-4',
+    providerId: 'h-3',
+    providerName: 'Royal Palace Convention Center',
+    menuItem: 'Dal Makhani & Naan (Bulk Container)',
+    quantity: 80,
+    readyByTime: '16:30',
+    pickupWindow: '16:30 - 19:00',
+    distanceKm: 14.5,
+    accessible: false,
+    postedAt: '2026-09-19T15:20:00Z',
+    status: 'available'
+  }
+];
+
+export const INITIAL_CLAIMS: Claim[] = [
+  {
+    id: 'claim-101',
+    listingId: 'list-old-1',
+    listingTitle: 'Mixed Vegetable Curry & Roti',
+    providerName: 'Grand Horizon Hotel & Buffet',
+    providerPhone: '+91 98765 43210',
+    claimantId: 'ngo-1',
+    claimantName: 'Hope Foundation Shelter',
+    claimantRole: 'ngo',
+    quantity: 30,
+    pickupWindow: '12:00 - 14:00',
+    claimedAt: '2026-09-19T11:30:00Z',
+    verificationStatus: 'verified',
+    idDocUploaded: true,
+    selfieUploaded: true,
+    proofOfPickupUploaded: true,
+    proofPhotoUrl: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500&auto=format&fit=crop&q=60'
+  },
+  {
+    id: 'claim-102',
+    listingId: 'list-old-2',
+    listingTitle: 'South Indian Breakfast Items',
+    providerName: 'City Center Mess',
+    providerPhone: '+91 98765 88990',
+    claimantId: 'p-1',
+    claimantName: 'Aarav Sharma',
+    claimantRole: 'personal',
+    quantity: 4,
+    pickupWindow: '10:30 - 11:30',
+    claimedAt: '2026-09-19T10:00:00Z',
+    verificationStatus: 'unverified',
+    idDocUploaded: true,
+    selfieUploaded: true,
+    proofOfPickupUploaded: false
+  }
+];
